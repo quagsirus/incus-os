@@ -28,6 +28,7 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: stable
+          cache-dependency-path: "**/go.sum"
 
       - name: Fix repository permissions
         run: |
